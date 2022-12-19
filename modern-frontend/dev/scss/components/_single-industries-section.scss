@@ -1,0 +1,51 @@
+.single-industries-section-container {
+    &__grid-col {
+        @media screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 130px 1fr;
+        }
+    }
+    &__grid-col-two {
+        @media screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 130px 1fr;
+            justify-items: center;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 0;
+        @media screen and (min-width: 768px) {
+            padding: 2rem 0;
+            margin: 0;
+        }
+        @media screen and (min-width: 992px) {
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__desc {
+        color: $white-color;
+        background-color: $primary-main-color-brand;
+        padding: 1rem;
+        font-weight: bold;
+        @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+    &__form {
+        background-color: #eaeaf5;
+        @media screen and (min-width: 992px) {
+            align-self: start;
+            justify-self: stretch;
+        }
+    }
+}

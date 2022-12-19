@@ -1,0 +1,60 @@
+.modern-website-button {
+    padding: 0.7em 1em;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    max-width: 222px;
+    &.short-text {
+        max-width: 150px;
+    }
+    &:hover,
+    &:visited,
+    &:active {
+        text-decoration: none;
+    }
+    &__icon {
+        padding: 16px;
+        margin-left: 8px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: {
+                image: url(images/icons/arrow-left-button.svg);
+                repeat: no-repeat;
+                size: cover;
+                position: center;
+            };
+        }
+    }
+    &__primary {
+        color: $white-color;
+        background-color: $primary-main-color-brand;
+        &:hover,
+        &:visited,
+        &:active {
+            color: $white-color;
+        }
+    }
+    &__secondary {
+        color: $white-color;
+        background-color: $secondary-main-color-brand;
+        &:hover,
+        &:visited,
+        &:active {
+            color: $white-color;
+        }
+    }
+}

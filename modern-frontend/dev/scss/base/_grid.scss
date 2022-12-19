@@ -1,0 +1,11 @@
+.container{
+    @include media-breakpoint-up(sm){
+        max-width: 98% !important;
+    }
+    @include media-breakpoint-up(lg){
+        max-width: 960px !important;
+    }
+    @include media-breakpoint-up(xl){
+        max-width: 1140px !important;
+    }
+}

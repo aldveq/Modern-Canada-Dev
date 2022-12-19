@@ -1,0 +1,155 @@
+.card{
+    &.maps-block{
+        border: 0 !important;
+        border-radius: 0 !important;
+        min-width: 100% !important;
+        .content-images{
+            position: relative;
+            width: 100% !important;
+        }
+        .card-img{
+            height: 380px !important;
+            object-fit: cover !important;
+            object-position: right center;
+            border-radius: 0 !important;
+            @media (min-width: 416px){
+                height: 410px !important;
+            }
+            @include media-breakpoint-up(md){
+                height: 700px !important;
+            }
+            @include media-breakpoint-up(lg){
+                height: 630px!important;
+            }
+            @media screen and (min-width: 1440px) {
+                height: 750px!important;
+            }
+            @media (min-width: 2200px) {
+                height: 810px !important;
+            }
+
+            &.image-map{
+                position: absolute;
+                width: 90%;
+                height: 200px!important;
+                left: 5%;
+                top: calc(50% - 90px);
+                right: auto;
+                object-fit: cover !important;
+                @media (min-width: 360px) { 
+                    height: 240px !important;
+                    top: calc(50% - 110px);
+                }
+                @media (min-width: 416px){
+                    height: 280px !important;
+                    top: calc(50% - 150px);
+                    max-width: 450px !important;
+                }
+                @media (min-width: 458px) and (max-width: 507px) {
+                    height: 300px !important;
+                    top: calc(50% - 150px);
+                    max-width: 440px !important;
+                }
+                @media (min-width: 508px) and (max-width: 571px) {
+                    height: 345px !important;
+                    top: calc(50% - 170px);
+                    max-width:500px !important;
+                }
+                @include media-breakpoint-up(sm){
+                    height: 360px !important;
+                    top: calc(50% - 180px);
+                    max-width: 560px !important;
+                }
+                @include media-breakpoint-up(md){
+                    height: 432px !important;
+                    top: 24% !important;
+                    max-width: 77% !important;
+                    object-fit: cover !important;
+                }
+                @media (min-width: 999px) {
+                    height: 510px!important;
+                    width: 71%;
+                    top: 120px!important;
+                    left: calc(15% / 2)!important;
+                    object-fit: contain !important;
+                }
+                
+                @media (min-width: 1200px) {
+                    width: 60%;
+                    height: 529px!important;
+                    top: 112px!important;
+                    left: calc(40% / 2)!important;
+                }
+                @media  (min-width: 1360px) {
+                    width: 70%;
+                    height: 526px!important;
+                    top: 113px!important;
+                    left: calc(17% / 2)!important;
+                }
+                @media (min-width: 1400px) {
+                    width: 68%;
+                    height: 600px!important;
+                    top: 145px!important;
+                    left: calc(20% / 2)!important;
+                }
+                @media (min-width: 1600px) {
+                    width: 1000px;
+                    height: 633px!important;
+                    top: 121px!important;
+                    left: calc(33% / 2)!important;
+                }
+
+                @media (min-width: 1900px) {
+                    width: 827px;
+                    height: 590px!important;
+                    top: 154px!important;
+                    left: calc(58% / 2)!important;
+                    object-fit: cover !important;
+                }
+                @media (min-width: 2200px) {
+                    width: 1024px;
+                    height: 640px!important;
+                    top: 150px!important;
+                    left: 28%!important;
+                    object-fit: contain !important;
+                }
+            }
+        }
+
+        .card-img-overlay{
+            position: relative !important;
+            padding-top: 0 !important;
+            @include media-breakpoint-up(md){
+                position: absolute !important;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 1.25rem;
+                border-radius: calc(.25rem - 1px);
+            }
+
+            .maps-block-text{
+                font-family: $sourceSanPro !important;
+                font-style: italic !important;
+                font-weight: 400 !important;
+                font-size: 20px !important;
+                line-height: 25px !important;
+                margin-bottom: 0 !important;
+
+                @include media-breakpoint-down(sm){
+                    color: $grey-text-secondary !important;
+                }
+
+                @include media-breakpoint-up(md){
+                    font-style: normal !important;
+                    text-align: center !important;
+                    font-weight: 700 !important;
+                    font-size: 26px !important;
+                    line-height: 33px !important;
+                }
+                
+            }
+        }
+    }
+}

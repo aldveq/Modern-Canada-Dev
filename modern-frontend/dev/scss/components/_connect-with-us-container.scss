@@ -1,0 +1,55 @@
+.connect-with-us-container {
+    background-color: #EAEAF5;
+    padding: 30px 0;
+    @media screen and (min-width: 1024px) {
+        padding: 80px 0;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary;
+        @media screen and (min-width: 1024px) {
+            font-size: 36px;
+        }
+    }
+    &__desc {
+        max-width: 410px;
+        color: $grey-text-terciary;
+        line-height: 1.9;
+        @media screen and (min-width: 992px) {
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+    &__label {
+        color: $primary; 
+        font-size: 10px;
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    &__input-container {
+        position: relative;
+    }
+    &__input,
+    &__textarea {
+        border: none !important;
+        padding-top: 32px !important;
+    }
+    &__input {
+        height: 56px;
+   }
+    &__textarea {
+        resize: none;
+    }
+    &__submit {
+        display: table; 
+        margin-left: auto;
+        padding: 18px 52px !important;
+        background-color: $secondary;
+        border: none !important;
+        font-weight: bold;
+    }
+}

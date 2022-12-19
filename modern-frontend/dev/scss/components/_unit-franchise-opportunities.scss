@@ -1,0 +1,50 @@
+
+// opportunity
+.unit-franchise-opportunity {
+    .title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .franchise_image_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 834px) { 
+    .unit-franchise-opportunity {
+        .franchise_image_web{
+            display: none;
+        }
+
+        .franchise_image_mobile {
+            display: block;
+        }
+
+        .col-md-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .unit-franchise-opportunity {
+        .title,
+        .fs-18, 
+        .fs-28 {
+            font-size: 16px;
+        }
+
+        .fs-22 {
+            font-size: 14px;
+        }
+    }
+}
+
+

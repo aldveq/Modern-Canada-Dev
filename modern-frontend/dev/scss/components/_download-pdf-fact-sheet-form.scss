@@ -1,0 +1,51 @@
+.download-pdf-fact-sheet-form-container {
+    background-color: #eaeaf5;
+    &__form {
+        display: table;
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &__label {
+        left: 10px !important;
+    }
+    &__input {
+        @media screen and (min-width: 576px) {
+            width: 100% !important;
+        }
+    }
+    &__submit {
+        width: 100%;
+        padding: 16px 26px !important;
+        &:hover {
+            background-color: $primary-main-color-brand !important;
+        }
+        @media screen and (min-width: 768px) {
+            width: auto;
+        }
+        & i {
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+            }
+        }
+    }
+    &__pdf-file-button {
+        display: none;
+        transition: display ease-in-out 0.3s;
+        font-size: 22px;
+        &.enable {
+            display: block;
+        }
+        &.enable-animation {
+            animation: crescendo 1.2s alternate infinite ease-in;
+        }
+    }
+}
+
+@keyframes crescendo {
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1);}
+}

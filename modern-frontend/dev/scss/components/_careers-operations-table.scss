@@ -1,0 +1,136 @@
+.careers-operations-table {
+
+    #careersOperationsTable {
+        .item.hidden {
+            display: none;
+        }
+    }
+    #nextPage {
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .modern-table tbody {
+        height: auto;
+        max-height: 250px;
+        
+        a.button-primary {
+            font-weight: 700;
+            padding: 7px 22px;
+            &:hover,
+            &:visited,
+            &:focus {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .modern-table tr td {
+        text-transform: uppercase;
+    }
+
+    .modern-list,
+    .header {
+        display: none;
+    }
+
+    .header-web {
+        height: 66px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+
+        .title {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) { 
+    .careers-operations-table {
+        .header-web {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .careers-operations-table {
+        background-color: $grey-industries-bg-color;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .header-web {
+            display: none;
+        }
+
+        .header {
+            display: block;
+
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        .modern-list {
+            display: block;
+            border-top: 1px solid $primary;
+            margin-bottom: 16px;
+
+            .item {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $white-color;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    margin: 0;
+                    line-height: 20px;
+                }
+
+               a.button-primary {
+                    display: table;
+                    margin-left: auto;
+                    width: 106px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    min-height: 62px;
+                    padding: 7px 22px;
+                    &:hover,
+                    &:visited,
+                    &:focus {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $grey-text-secondary;
+                }
+
+                .operations {
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            .footer {
+                margin-top: 1rem !important;
+            }
+        }
+        
+        .modern-table {
+            display: none;
+        }
+    }
+}

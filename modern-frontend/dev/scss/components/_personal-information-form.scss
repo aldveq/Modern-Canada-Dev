@@ -1,0 +1,23 @@
+.personal-information-form {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .body {
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+    }
+}
+
+.unit-territory-franchise-terms-conditions {
+    text-decoration: underline;
+    color: $primary-main-color-brand !important;
+    cursor: pointer;
+}

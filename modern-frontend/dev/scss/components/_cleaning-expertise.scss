@@ -1,0 +1,51 @@
+.modern-advantage{
+    .subtitle-moder-advantage{
+        color: $secondary !important;
+        text-transform: uppercase;
+        font-size: 14px !important;
+        font-family: $sourceSanPro !important;
+        font-weight: 600 !important;
+        letter-spacing: -.667px !important;
+    }
+
+    .the_title-moder-advantage{
+        color: $primary !important;
+        font-size: 20px !important;
+        font-family: $sourceSanPro !important;
+        line-height: 25px !important;
+        letter-spacing: 0 !important;
+        font-weight: 700 !important;
+        @include media-breakpoint-up(md){
+            font-size: 36px !important;
+            line-height: 45px !important;
+            letter-spacing: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+    .the_content{
+        font-family: $sourceSanPro !important;
+        font-weight: 400 !important;
+        font-size: 18px !important;
+        line-height: 23px !important;
+        letter-spacing: 0 !important;
+        color: $grey-text !important;
+    }
+
+    .col-image-section{
+        @include media-breakpoint-up(md){
+            display: flex !important;
+            align-items: flex-end !important;
+            justify-content: flex-end !important;
+        }
+        
+        .content-image-right{
+            height: 300px !important;
+            text-align: right;
+            img.image-right{
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+    }
+}

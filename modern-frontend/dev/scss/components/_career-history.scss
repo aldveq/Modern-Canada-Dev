@@ -1,0 +1,97 @@
+.career-history {
+    .image-hero{
+        object-fit: cover !important;
+        object-position: center !important;
+        height: 304px !important;
+
+        @include media-breakpoint-up(md){
+            height: 420px !important;
+        }
+        @include media-breakpoint-up(lg){
+            height: 100% !important;
+        }
+        @media (min-width: 1900px) {
+            height: 700px!important;
+        }
+        @media (min-width: 2200px) {
+            height: 780px!important;
+        }
+
+    }
+    .col-content{
+        background-color: #F9FAFF !important;
+        @include media-breakpoint-up(md){
+            padding: 2rem 3rem !important;
+            display: flex;
+            justify-content: center;
+        }
+        @include media-breakpoint-up(lg){
+            padding: 3.5rem 5rem !important;
+            justify-content: start !important;
+        }
+    }
+    .content-info{
+        @include media-breakpoint-up(lg){
+            max-width: 400px !important;
+        }
+        .subtitle{
+            color: $secondary !important;
+            text-transform: uppercase;
+            font-size: 14px !important;
+            font-family: $sourceSanPro !important;
+            font-weight: 600 !important;
+        }
+
+        .title{
+            color: $primary !important;
+            font-size: 20px !important;
+            font-family: $sourceSanPro !important;
+            line-height: 25px !important;
+            letter-spacing: 0 !important;
+            font-weight: 700 !important;
+            @include media-breakpoint-up(lg){
+                font-size: 36px !important;
+                line-height: 45px !important;
+                letter-spacing: 0 !important;
+                margin-bottom: 1rem !important;
+            } 
+        }
+        .the_content{
+            font-family: $sourceSanPro !important;
+            font-weight: 400 !important;
+            font-size: 18px !important;
+            line-height: 23px !important;
+            letter-spacing: 0 !important;
+            color: $grey-text !important;
+        }
+    }
+
+    .row-button span {
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+    }
+
+    .button-primary-uppercase {
+        margin-top: 2rem;
+        max-width: 215px;
+        color: $white-color;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+
+    .subtitle {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .career-history { 
+        .title,
+        .button-primary-uppercase {
+            margin-top: 0.8rem;
+        } 
+    }
+}

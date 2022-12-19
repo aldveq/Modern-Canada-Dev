@@ -1,0 +1,96 @@
+.modern-landscape-container {
+    background: linear-gradient(180deg,#2f318d 30%,#fff 101%);
+    @media screen and (min-width: 768px) {
+        background: $primary;
+    }
+    &__main-title {
+        font-size: 20px;
+        @media screen and (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 36px;
+        }
+    }
+    &__map-container {
+        padding: 20px 0 200px 0;
+        background: {
+            repeat: no-repeat;
+            size: 94%;
+            position: center bottom;
+        }
+        @media screen and (min-width: 360px) {
+            padding: 20px 0 230px 0;
+        }
+        @media screen and (min-width: 412px) {
+            padding: 20px 0 264px 0;
+        }
+        @media screen and (min-width: 414px) {
+            background-size: 98%;
+            padding: 20px 0 278px 0;
+        }
+        @media screen and (min-width: 576px) {
+            padding: 20px 0 380px 0;
+        }
+        @media screen and (min-width: 768px) {
+            padding: 20px 0 490px 0
+        }
+        @media screen and (min-width: 834px) {
+            padding: 20px 0 550px 0;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 20px 0 510px 0;
+            background-size: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            background-size: 70%;
+            padding: 20px 0 480px 0;
+        }
+        @media screen and (min-width: 1366px) {
+            background-size: 64%;
+            padding: 20px 0 490px 0;
+        }
+    }
+    &__info-container-border {
+        border-left: 1px solid $white-color;
+        border-right: 1px solid $white-color;
+    }
+    &__map-location {
+        @media screen and (min-width: 412px) {
+            max-width: 100px;
+        }
+        @media screen and (min-width: 412px) {
+            max-width: initial;
+        }
+    }
+    & iframe {
+        @media screen and (min-width: 768px) {
+            width: 640px !important;
+            height: 390px !important;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 940px!important;
+            height: 516px!important;
+        }
+    }
+
+    &__text {
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 36px;
+        }
+    }
+    &__text--sm-desktop {
+        font-size: 16px;
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+        }
+    }
+    &__text--square-feet {
+        @media screen and (min-width: 1200px) {
+            max-width: 200px;
+        }
+    }
+}

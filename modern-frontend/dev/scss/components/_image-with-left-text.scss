@@ -1,0 +1,134 @@
+.image-with-left-text {
+    position: relative;
+    .image {
+        width: 100%;
+        -o-object-fit: contain;
+        object-fit: cover;
+        object-position: top;
+        height: 450px;
+    }
+
+    .section-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .container-text {
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+    .container-image {
+        margin: 0;
+    }
+
+    .content-arrow {
+        margin-left: 16px;
+        position: relative;
+        display: block;
+        height: 44%;
+        margin-top: 40px;
+    }
+    
+    .line {
+        width: 1px;
+        background: $white-color;
+        height: 100%;
+        float: left;
+    }
+
+    .right-line {
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background: $white-color;;
+        bottom: -1px;
+        transform: rotate(30deg);
+        left: 3px;
+    }
+
+    .left-line {
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background: $white-color;;
+        bottom: -1px;
+        transform: rotate(150deg);
+        left: -3px;
+    }
+
+    .outline-button {
+        background: transparent;
+        color: #fff;
+        max-width: 210px;
+        min-width: 180px;
+        text-align: left;
+        border-radius: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid $white;
+        padding: .5rem 1rem;
+        font-weight: 600;
+        pointer-events: all !important;
+        cursor: pointer !important;
+        z-index: 5 !important;
+        position: relative;
+        &.row-button span{
+            transform: rotate(0);
+            height: 14px;
+            width: 14px;
+            margin: 0;
+            display: table;
+            position: absolute;
+            right: 20px;
+            top: 48%;
+            transform: translateY(-48%);
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) { 
+    .image-with-left-text {
+        .image {
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .section-caption {
+            position: relative;
+        }
+
+        .fs-36 {
+            margin-bottom: 1rem !important;
+            font-size: 22px;
+        }
+
+        .content-arrow {
+            height: 41px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .container-text {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    
+}
+
+@include media-breakpoint-up(md){
+    .text-description-block-text-left{
+        max-width: 290px !important;
+    }
+}
+
+.z-index-n1{
+    z-index: -1  !important;
+}

@@ -1,0 +1,266 @@
+// history
+.unit-franchise-history {
+    &__swiper-wrapper {
+        @media screen and (min-width: 1920px) {
+            height: 650px !important;
+        }
+        @media screen and (min-width: 2500px) {
+            height: 750px !important;
+        }
+    }
+    .image-history {
+        width: 100%;
+        display: block;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+        @media screen and (min-width: 412px) {
+            height: 290px !important;
+        }
+        @media screen and (min-width: 576px) {
+            height: 380px !important;
+        }
+        @include media-breakpoint-up(md){
+            height: 100% !important;
+        }
+        @include media-breakpoint-up(lg){
+            height: 530px !important;
+        }
+        @media screen and (min-width: 1920px) {
+            height: 650px !important;
+        }
+        @media screen and (min-width: 2500px) {
+            height: 750px !important;
+        }
+    }   
+
+    .history-title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    .container-history {
+        padding: 36px 60px;
+        width: 516px;
+        @media screen and (min-width: 1200px) {
+            padding: 74px 60px;
+        }
+        @media screen and (min-width: 1920px) {
+            padding: 120px 60px;
+        }
+        @media screen and (min-width: 2560px) {
+            padding: 184px 60px;
+        }
+    }
+
+    .first-description {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .second-description {
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        max-width: 450px;
+    }
+
+    .author {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__link {
+        padding: 10px 40px 10px 15px;
+        background-color: $primary-main-color-brand;
+        position: relative;
+        color: $white-color !important;
+        text-decoration: none !important;
+        &:active,
+        &:visited,
+        &:hover {
+            color: $white-color !important;
+            text-decoration: none !important;
+        }
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background: {
+                image: url(images/icons/arrow-left-button.svg);
+                repeat: no-repeat;
+                size: cover;
+                position: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .unit-franchise-history  {
+        .container-history {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .unit-franchise-history  { 
+
+        .first-description {
+            font-weight: 500;
+        }
+
+        .block-right-mobile {
+            display: block;
+        }
+
+        .container-history {
+            padding: 1rem;
+        }
+
+        .first-description {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .unit-franchise-history {
+        .history-title {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .author {
+            font-size: 16px;
+        }
+
+        .second-description {
+            font-size: 16px;
+        }
+    }
+}
+
+.unit-franchise-history {
+    
+    .swiper-unit-franchise-right{
+        @include media-breakpoint-up(xl){
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        line-height: 1;
+        color: #fff !important;
+        @media screen and (min-width: 768px) {
+            font-size: 22px !important;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 28px !important;
+        }
+    }
+
+    .swiper-button-prev{
+        @include media-breakpoint-up(xl){
+            left: 2rem !important;
+        }
+    } 
+    .swiper-button-next, .swiper-button-prev{
+        top: 44% !important;
+        cursor: pointer !important;
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #F9FAFF !important;
+        border: 1px solid #979797 !important;
+        opacity: .6;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #D8D8D8 !important;
+        border: 1px solid #979797 !important;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        @include media-breakpoint-up(md){
+            bottom: 15px;
+            left: auto;
+            width: 50%;
+            right: 0;
+        }
+    }
+    
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 25px;
+}
+
+
+.content-slide{
+    @include media-breakpoint-up(md){
+        .row{
+            .col-md-6{
+                width: 50% !important;
+                max-width: 50% !important;
+                padding: 0 !important;
+
+                &.content-info{
+                    display: flex !important;
+                    .container-history{
+                        max-width: 560px !important;
+                        margin: 0 auto !important;
+                        padding-left: 10px !important;
+                        padding-right: 10px !important;
+                        padding-bottom: 4rem !important;
+                        @media screen and (min-width: 1920px) {
+                            margin: 0 auto 0 4rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-unit-franchise-prev,
+.swiper-unit-franchise-next {
+    color: #fff;
+    background: #2f318d!important;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    @media screen and (min-width: 768px) {
+        width: 35px;
+        height: 35px;
+    }
+    @media screen and (min-width: 992px) {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.swiper-unit-franchise-next {
+    @media screen and (min-width: 1200px) {
+        right: 28px;
+    }
+}
+
+.swiper-unit-franchise-pagination {
+    bottom: 10px !important;
+    @media screen and (min-width: 768px) {
+        bottom: 15px !important;
+    }
+}

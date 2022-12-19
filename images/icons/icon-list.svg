@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="11px" height="6px" viewbox="0 0 11 6" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L3.99325 0L3.99325 3.844L0 3.844L0 0Z" transform="translate(0 0.13388571)" id="path_1" />
+    <path d="M0 0L9.51172 0L9.51172 5.64777L0 5.64777L0 0Z" transform="translate(0.30786207 0.0522)" id="path_2" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="mask_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="Group-7">
+    <g id="Group-3" transform="translate(0 1)">
+      <path d="M0 0L3.99325 0L3.99325 3.844L0 3.844L0 0Z" transform="translate(0 0.13388571)" id="Clip-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M3.99323 1.01829C4.00738 0.217429 2.06523 0.0368571 1.46431 0L0 3.844C1.49877 3.22086 3.97569 2.038 3.99323 1.01829" transform="translate(-6.153846E-05 0.13388571)" id="Fill-1" fill="#8CC63F" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+    <g id="Group-6" transform="translate(1 0)">
+      <path d="M0 0L9.51172 0L9.51172 5.64777L0 5.64777L0 0Z" transform="translate(0.30786207 0.0522)" id="Clip-5" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_2)">
+        <path d="M8.32724 0.453C7.66655 0.1509 6.86034 0 5.9069 0L0.944483 0L0.544138 0.9849C1.93862 0.9906 3.46724 1.0308 4.81586 1.1451C4.81586 1.1451 7.03034 1.3005 7.27897 2.2113C7.50552 3.0426 6.27862 4.1886 0 5.6478L3.52828 5.6409C4.29724 5.6409 5.12448 5.5167 6.00931 5.2677C7.73828 4.7826 8.84793 3.9414 9.33793 2.7456C9.45379 2.4669 9.51172 2.2062 9.51172 1.9632C9.51172 1.3062 9.11655 0.8028 8.32724 0.453" transform="translate(0.30786207 0.05217)" id="Fill-4" fill="#8CC63F" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+$primary-main-color-brand:  #2A2E93;
+$secondary-main-color-brand: #A1C853;
+$white-color: #fff;
+$black-color: #000;
+$primary: #2F318D;
+$secondary: #9FC754;
+$third:  rgba(47,49,141,0.05);
+$atlantis:#94C83D;
+
+$grey-text: #646464;
+$grey-text-secondary: #696969;
+$grey-text-terciary: #797979;
+$grey-border-color: #979797;
+$grey-industries-bg-color: #F4F4F9;
+$grey-color: #F9FAFF;
+$dove-gray: #676767;
+$mine-shaft: #323232;
+$silver-chalice: #B1B1B1;
+
+//form state
+$error: #C10000;
+
+.primary-text-color {
+    color: $primary !important; 
+}
+
+.white-color {
+    color: $white-color;
+}
+
+.black-color {
+    color: $black-color;
+}
+
+.white-color-bg {
+    background-color: $white-color !important;
+}
+
+.black-color-bg {
+    background-color: $black-color !important;
+}

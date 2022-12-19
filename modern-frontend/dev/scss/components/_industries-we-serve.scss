@@ -1,0 +1,138 @@
+.mobile-industries-we-serve-container {
+    &__mobile-main-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary;
+    }
+    &__accordion-container {
+        background-color: $grey-industries-bg-color;
+    }
+    &__card,
+    &__card-header {
+        background-color: transparent !important;
+        border: none !important;
+    }
+    &__card-header {
+        border-bottom: 2px solid $white-color !important;
+    }
+    &__tab-title {
+        color: $primary !important;
+        &:active,
+        &:focus,
+        &:visited,
+        &:hover {
+            color: $primary !important;
+            text-decoration: none !important;
+        }
+        & button.btn-link {
+            color: $primary !important;
+            &:active,
+            &:focus,
+            &:visited,
+            &:hover {
+                color: $primary !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+    &__tab-button {
+        position: relative;
+        transition: all ease-in-out 0.3s;
+        font-size: 20px !important;
+        &::after {
+            content: '';
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background: {
+                image: url(images/icons/expand.png);
+                repeat: no-repeat;
+                size: cover;
+                position: right center;
+            };   
+        }
+        &.service-tab-collapse::after {
+            background-image: url(images/icons/expandcolapse.png);
+        }
+    }
+    &__service-img {
+        object-fit: cover;
+        @media screen and (min-width: 412px) {
+            max-width: 250px !important;
+        }
+    }
+    &__service-link {
+        width: 210px !important;
+        padding: 8px 20px !important;
+        & a::after {
+            display: block !important;
+            right: -52px;
+            bottom: 32%;
+        }
+    }
+    &__service-single-link {
+        color: $primary-main-color-brand;
+    }
+}
+
+.desktop-industries-we-serve-container {
+    &__desc p {
+        @media screen and (min-width: 768px) {
+            // max-width: 600px;
+            font-size: 20px;
+        }
+    }
+    &__desktop-card {
+        border: none !important;
+        background-color: $grey-industries-bg-color !important;
+        border-radius: 0 !important;
+        overflow: hidden;
+        &--h100 {
+            height: 100% !important;
+            & .desktop-industries-we-serve-container__desktop-card-img-container {
+                @media screen and (min-width: 992px) {
+                    height: 250px !important;
+                }
+            }
+            & img {
+                object-position: top;
+            }
+        }
+    }
+    &__desktop-card-img-container-service {
+        color: $primary-main-color-brand;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &__desktop-card-img {
+        border-radius: 0 !important;
+        object-fit: cover;
+    }
+    &__service-link {
+        @media screen and (min-width: 1024px) {
+            padding-right: 41px !important;
+        }
+    }
+    &__card-body {
+        & h1,h2,h3,h4,h5,h6 {
+            color: #9fc754!important;
+        }
+        & p {
+            font-size: 16px!important;
+            line-height: 20px!important;
+            font-weight: 400!important;
+            letter-spacing: 0!important;
+            color: #646464!important;
+        }
+    }
+    &__desktop-card-title {
+        margin-bottom: 1rem!important;
+    }
+}
+
+.mobile-industries-we-serve-container__card:last-child  .card-header {
+    border-bottom: none !important;
+}

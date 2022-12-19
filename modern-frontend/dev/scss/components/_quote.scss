@@ -1,0 +1,32 @@
+// quote
+.unit-franchise-quote {
+    .title {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    .quote {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .unit-franchise-quote {
+        .description {
+            font-size: 20px;
+        }
+
+        .quote {
+            font-size: 14px;
+        }
+    }
+}

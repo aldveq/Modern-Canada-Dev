@@ -1,0 +1,163 @@
+
+.unit-franchise-opportunity-table {
+    background-color: $grey-industries-bg-color;
+
+    #careersOperationsTable {
+        .item.hidden {
+            display: none;
+        }
+    }
+    #nextPage {
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .modern-list {
+        display: none;
+    }
+
+    .fill-out {
+        max-width: 220px;
+    }
+
+    .content-application {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        
+        .button-secondary {
+            min-height: 40px;
+        }
+    }
+    
+    .select-franchise-id {
+        max-width: 240px;
+        width: 240px;
+        margin-right: 12px;
+
+        select {
+            min-height: 40px!important;
+            padding: 12px !important;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) { 
+    .unit-franchise-opportunity-table { 
+        .text-right {
+            text-align: left !important;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    .unit-franchise-opportunity-table {
+        .fs-36 {
+            font-size: 20px;
+        }
+
+        .fs-22 {
+            font-size: 16px;
+        }
+
+        .modern-table {
+            display: none;
+        }
+
+
+        .content-application {
+            display: block; 
+        }
+
+        .select-franchise-id,
+        .fill-out {
+            max-width: 220px;
+            width: 220px;
+        }
+        
+        .fill-out--mobile {
+            max-width: 132px;
+            width: 132px;
+        }
+        
+        .fill-out {
+            justify-content: space-between;
+        }
+
+        .modern-list {
+            display: block;
+            border-top: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+            margin-bottom: 16px;
+            .item {
+                padding-top: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $white-color;
+
+                p {
+                    margin: 0;
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $grey-text-secondary;
+                }
+
+                .opportunity-id {
+                    color: $primary;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.item {
+    position: relative;
+    &__opportunity-selection-checkbox {
+        position: absolute;
+        top: 16px;
+        right: 0;
+    }
+}
+
+.fill-out--mobile.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+// Checkbox styles
+
+.checkbox-multi-opportunity-desktop + label.checkbox-uf-opportunity-label-desktop,
+.checkbox-multi-opportunity-mobile + label.checkbox-uf-opportunity-label-mobile {
+	background-color: #ffffff;
+	border: 2px solid #2f318d;
+	padding: 0 12px;
+	border-radius: 3px;
+	display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-multi-opportunity-desktop:checked + label.checkbox-uf-opportunity-label-desktop,
+.checkbox-multi-opportunity-mobile:checked + label.checkbox-uf-opportunity-label-mobile {
+	background-color: #ffffff;
+	border: 2px solid #2f318d;
+	color: #2f318d;
+}
+
+.checkbox-multi-opportunity-desktop:checked + label.checkbox-uf-opportunity-label-desktop:after,
+.checkbox-multi-opportunity-mobile:checked + label.checkbox-uf-opportunity-label-mobile:after {
+    content: '\2714';
+    font-size: 18px;
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    color: #2f318d;
+}

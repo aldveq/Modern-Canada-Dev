@@ -1,0 +1,104 @@
+.modern-profile {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    h5 {
+        text-transform: capitalize;
+    }
+    
+    h2 {
+        max-width: 510px;
+    }
+    
+    .requirements-content {
+        margin-top: 4rem;
+    }
+    
+    .profile-image-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .modern-profile {
+        padding-top: 0;
+
+        .col-md-6 {
+            width: 100%;
+        }
+
+        .fs-36 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .fs-18 {
+            font-size: 16px;
+        }
+
+        .requirements-content {
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .profile-image-web {
+            .content-image {
+                display: none;
+            }
+        }
+
+        .profile-image-mobile {
+            display: block;
+            margin: 0;
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+            }
+
+            .col-12 {
+                padding: 0;
+            }
+        }
+    }
+}
+.modern-profile{
+    .description{
+        font-family: $sourceSanPro !important;
+        color: $grey-text !important;
+        p{
+            font-size: 18px !important;
+            font-family: $sourceSanPro !important;
+            font-weight: 400 !important;
+        }
+        p strong{
+            font-size: 18px !important;
+            font-weight: 700 !important;
+        }
+        @include media-breakpoint-up(md){
+            p{
+                margin-bottom: 12px;
+            }
+        }
+        
+    }
+    .content-btn{
+        width: 170px !important;
+        .link-btn-slider{
+            padding: .2rem .5rem !important;
+            padding-left: 1rem !important;
+            .text-hero-container__external-link-cta{
+                position: relative !important;
+                font-size: 14px !important;
+                line-height: 14px !important;
+                &:after{
+                    right: -64px !important;
+                    bottom: 15px !important;
+                }
+            }
+        }
+    }
+}

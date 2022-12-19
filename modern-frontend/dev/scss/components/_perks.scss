@@ -1,0 +1,61 @@
+.perks {
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .block-left {
+        padding-top: 2.6rem;
+        padding-bottom: 2.6rem;
+
+        img {
+            width: 95px;
+            height: 95px;
+        }
+
+        .item {
+            padding: 0 8px;
+            p {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .link-item {
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .block-right {
+        image {
+            max-width: 486px;
+            max-height: 326px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .perks { 
+        .block-left { 
+            img {
+                width: 52px;
+                height: 52px;
+            }
+
+            .item {
+                padding: 0 4px;
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .block-right {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+
+.accordion{
+    .card-accordion-aplication{
+        border: 0 !important;
+        background-color: $white !important;
+
+        .card-header{
+            background-color: transparent !important;
+            padding: 0 !important;
+            border-bottom: 1px solid $primary !important;
+            padding-bottom: 1rem !important;
+            .btn{
+                border-radius: 0 !important;
+                &.btn-link{
+                    text-decoration: none !important;
+                    border: 0 !important;
+                    border-bottom: 1px!important;
+                    &:hover,&:focus,&:active{
+                        border: 0 !important;
+                        border-bottom: 1px solid $primary!important;
+                        outline: 0 !important;
+                        box-shadow:none !important;
+                    }
+                }
+            }
+            .arrow-acordion{
+                width: 19px !important;
+            }
+            .btn-arrow-collapse[aria-expanded="true"]{
+                border-bottom: 1px solid $primary !important;
+            }
+            .btn-arrow-collapse[aria-expanded="true"] img {
+                transform: rotate(180deg);
+            }
+           
+            h3{
+                color: $primary !important;
+                font-family: $sourceSanPro !important;
+                font-size: 18px !important;
+                font-weight: 700 !important;
+                line-height: 23px !important;
+                letter-spacing: 0 !important;
+                text-transform: uppercase !important;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                max-height: 32px !important;
+                justify-content: space-between;
+            }
+            p{
+                color: $grey-text !important;
+                font-size: 14px !important;
+                font-family: $sourceSanPro !important;
+                font-style: italic !important;
+                font-weight: 400 !important;
+                letter-spacing: -.67px!important;
+                line-height: 18px !important;
+            }
+        }
+
+        .card-header:first-of-type {
+            border-bottom: 0 !important;
+            border-bottom: 1px solid $white !important;
+            cursor: initial !important;
+            button{
+                cursor: initial !important;
+
+                &:hover{
+                    border-bottom: 1px solid $white !important;
+                }
+            }
+        }
+
+        .card-body{
+            p{
+                font-weight:  400 !important;
+                font-family: $sourceSanPro !important;
+                font-style: italic !important;
+                color: $grey-text !important;
+            }
+        }
+    }
+
+    #collapsePersonalInfo{
+        .card-header{
+            .btn-link{
+                border-bottom: 0 !important;
+                border-radius: 0 !important;
+                &:hover{
+                    border-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+
+//form styles
+.form-control,.custom-select{
+    border: 1px solid #CCCCCC !important;
+    border-radius: 3px !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    font-weight: 600 !important;
+    min-height: 44px !important;
+    font-family: $sourceSanPro !important;
+    color: #333333 !important;
+    padding: 12px !important ;
+}
+//validate State
+.form-control.is-invalid, .was-validated .form-control:invalid:focus {
+    border-color: $error !important;
+    box-shadow: 1px 1px 4px 1px rgba(104,0,0,.49)!important;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #28a745 !important;
+    background-position: right calc(.375em + .1875rem) center !important;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem) !important;
+}
+.required-label{
+    color: $error !important;
+}
+.custom-label{
+    font-family: $sourceSanPro !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: -.66px !important;
+    line-height: 18px  !important;
+}
+
+.btn-form-aplication{
+    width: 190px !important;
+}
+button.text-hero-container__external-link-cta.form-unit{
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    padding-bottom: .5rem !important;
+    max-width: 120px !important;
+    text-align: left !important;
+    &:after{
+        right: -15px !important;
+    }
+}

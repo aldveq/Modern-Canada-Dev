@@ -14,6 +14,7 @@
         $identifyMarketsOne = isset($_POST['identifyMarketsOne']) && !empty($_POST['identifyMarketsOne']) ? $_POST['identifyMarketsOne'] : '';
         $identifyMarketsTwo = isset($_POST['identifyMarketsTwo']) && !empty($_POST['identifyMarketsTwo']) ? $_POST['identifyMarketsTwo'] : '';
         $identifyMarketsThree = isset($_POST['identifyMarketsThree']) && !empty($_POST['identifyMarketsThree']) ? $_POST['identifyMarketsThree'] : '';
+		$pageTemplate = isset($_POST['page_template']) && !empty($_POST['page_template']) ? $_POST['page_template'] : '';
 
         $client_message = 'First: '.$firstName."\r\n";
         $client_message .= 'Last: '.$lastName."\r\n";
@@ -49,11 +50,20 @@
                 $french_territory_franchise_form_recipients = get_field('french_territory_franchise_form_recipients', 'option');
                 $recipients = (pll_current_language('slug') == 'fr') ? $french_territory_franchise_form_recipients : $english_territory_franchise_form_recipients;
 
-                $territory_franchise_subject_field_group = get_field('territory_franchise_application_form_subject_text_group', 'option');
-                $territory_franchise_application_form_subject_text_in_english = $territory_franchise_subject_field_group['territory_franchise_application_form_subject_text_in_english'];
-                $territory_franchise_application_form_subject_text_in_french = $territory_franchise_subject_field_group['territory_franchise_application_form_subject_text_in_french'];
+				$subject = '';
 
-                $subject = (pll_current_language('slug') == 'fr') ? $territory_franchise_application_form_subject_text_in_french : $territory_franchise_application_form_subject_text_in_english;
+                if ($pageTemplate === 'template-ad.php'):
+					$territory_franchise_gad_subject_field_group = get_field('territory_franchise_application_form_subject_text_group_ga_campaign', 'option');
+                	$territory_franchise_application_form_subject_gac_text_in_english = $territory_franchise_gad_subject_field_group['territory_franchise_application_form_subject_gac_text_in_english'];
+                	$territory_franchise_application_form_subject_gac_text_in_french = $territory_franchise_gad_subject_field_group['territory_franchise_application_form_subject_gac_text_in_french'];
+					$subject = (pll_current_language('slug') == 'fr') ? $territory_franchise_application_form_subject_gac_text_in_french : $territory_franchise_application_form_subject_gac_text_in_english;
+				else:
+					$territory_franchise_subject_field_group = get_field('territory_franchise_application_form_subject_text_group', 'option');
+                	$territory_franchise_application_form_subject_text_in_english = $territory_franchise_subject_field_group['territory_franchise_application_form_subject_text_in_english'];
+                	$territory_franchise_application_form_subject_text_in_french = $territory_franchise_subject_field_group['territory_franchise_application_form_subject_text_in_french'];
+					$subject = (pll_current_language('slug') == 'fr') ? $territory_franchise_application_form_subject_text_in_french : $territory_franchise_application_form_subject_text_in_english;
+				endif;
+				
 
                 $headers = 'MIME-Version: 1.0' . "\r\n"; 
                 $headers .= 'Content-type: text/plain' . "\r\n"; 
@@ -63,10 +73,12 @@
                 } else {
                     header("Location:$redirect_destination_error");
                 }
-            } else {
+            } 
+			else {
                 header("Location:$redirect_destination_error");
             }
-        } else {
+        } 
+		else {
             header("Location:$redirect_destination_error");
         }
 ?>

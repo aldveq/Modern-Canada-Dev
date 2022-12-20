@@ -1,5 +1,6 @@
 <?php 
     $personal_information_disclaimer_text = get_field('personal_information_disclaimer_text');
+	global $post;
 ?>
 <section class="personal-information-form">
     <div class="container">
@@ -160,6 +161,9 @@
             </div>
 
             <div class="row">
+				<div class="col-12 d-none">
+                    <input type="text" class="form-control" name="page_template" value="<?php echo esc_attr(get_page_template_slug($post->ID)); ?>" hidden>
+				</div>
                 <div class="col-12 d-flex justify-content-start align-items-center mb-4">
                     <div class="g-recaptcha" data-sitekey="6LefesAaAAAAAO8f8HO090hui6H-Fm3UNwq0B85r"></div>
                 </div>

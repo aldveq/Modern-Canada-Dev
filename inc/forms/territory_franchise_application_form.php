@@ -31,13 +31,21 @@
         $client_message .= 'Market Three: '.$identifyMarketsThree."\r\n";
 
         // Redirections
+		$redirect_destination = '';
         $general_french_thank_you_age_link = get_field('general_french_thank_you_page', 'option');
         $general_english_thank_you_age_link = get_field('general_english_thank_you_page', 'option');
+		$territory_franchise_english_thank_you_page_g_ad = get_field('territory_franchise_english_thank_you_page_g_ad', 'option');
+		$territory_franchise_french_thank_you_page_g_ad = get_field('territory_franchise_french_thank_you_page_g_ad', 'option');
         $error_french_page = get_field('error_french_page','option');
         $error_english_page = get_field('error_english_page','option');
+		$redirect_destination_error = (pll_current_language('slug') == 'fr') ? $error_french_page['url'] : $error_english_page['url'];
 
-        $redirect_destination = (pll_current_language('slug') == 'fr') ? $general_french_thank_you_age_link['url'] : $general_english_thank_you_age_link['url'];
-        $redirect_destination_error = (pll_current_language('slug') == 'fr') ? $error_french_page['url'] : $error_english_page['url'];
+		if ($pageTemplate === 'template-ad.php') {
+			$redirect_destination = (pll_current_language('slug') == 'fr') ? $territory_franchise_french_thank_you_page_g_ad['url'] : $territory_franchise_english_thank_you_page_g_ad['url'];
+		} else {		
+			$redirect_destination = (pll_current_language('slug') == 'fr') ? $general_french_thank_you_age_link['url'] : $general_english_thank_you_age_link['url'];
+		}
+
 
         if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
             $secret_key = '6LefesAaAAAAAIXSr2gsTeVTo2MXRDo44dn2ebIV';
